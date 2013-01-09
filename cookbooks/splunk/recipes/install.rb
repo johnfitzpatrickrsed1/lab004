@@ -12,7 +12,6 @@ rightscale_marker :begin
 log "installing Splunk"
 
 user "#{node[:splunk][:user]}" do
-user node[:splunk][:user] do
  action :create
  system true
  shell "/bin/bash"
